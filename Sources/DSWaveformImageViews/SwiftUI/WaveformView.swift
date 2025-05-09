@@ -65,7 +65,7 @@ public struct WaveformView<Content: View>: View {
                         self.samples = samples
                     }
                 } catch {
-                    assertionFailure(error.localizedDescription)
+                    debugPrint(error.localizedDescription)
                 }
             }
         }
